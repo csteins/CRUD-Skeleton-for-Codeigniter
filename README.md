@@ -11,4 +11,8 @@ Installation
 - Create a new model by extending the *dbRecordModel*. Adjust the parameters according to the structure of your database table.
 - Customize the code generation templates in the *code_generation_templates* folder
 - Create a controller, include the *codegenerator_helper* and call the *generate_controller()*, *generate_overview()*, *generate_detailview()* functions. Use the name of the model without the suffix "model" as the first and *true* as the second parameter.
-                                                                                                                                                For problems and comments please contact me.
+
+
+Contact
+-------------
+For error reports, problems and comments please contact me.
