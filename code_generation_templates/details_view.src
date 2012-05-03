@@ -1,0 +1,14 @@
+<?
+$this->load->helper('url');
+$action_url = site_url("/[[name]]/$action/");
+$overview_url = site_url('/[[name]]/');
+?>
+<h1>Edit [[name]]</h1>
+<a href="<? echo $overview_url;?>"><input value="back to overview" type="button"></a><br>
+<form name="[[name]]details" method="POST" action="<?= $action_url; ?>">
+	<input type='hidden' name='[[name]][[[primary_key]]]' value='<?= $[[name]]['[[primary_key]]']; ?>' >
+		<table cellspacing="2" cellpadding="2" border="0" width="100%">
+			[[fields]]
+		</table>
+	<input type="submit" name="Submit" value="Save [[name]]" accesskey="s">
+</form>

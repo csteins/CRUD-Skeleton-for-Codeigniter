@@ -1,0 +1,27 @@
+<?
+   $this->load->helper('url');
+   $modify_url = site_url('[[name]]/modify/');
+   $delete_url = site_url('[[name]]/delete/');
+   $add_url    = site_url('[[name]]/add/');
+
+?>
+<h1>[[name]] overview</h1><br>
+<form action='<?= $add_url; ?>' name="[[name]]grid" id="[[name]]grid" method='POST'>
+    <input class="button" value="Add [[name]]" type="submit" name='add' id='add' accesskey="a">
+</form>
+<br />
+<table border="0" cellpadding="2" cellspacing="1" width="100%">
+[[gridheader]]
+<tbody>
+<? foreach ($[[name]]_list as $row) { ?>
+<tr>
+[[gridrow]]
+</tr>
+<? } ?>
+</tbody>
+</table>
+<br />
+
+
+
+
