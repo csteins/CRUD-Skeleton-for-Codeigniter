@@ -5,6 +5,10 @@ This skeleton provided me with quick CRUD functionality for several projects.
 The general ideas is to derive most of the logic from the database schema and the correponding model.
 The user model, the user controller and the user views are example files.
 
+Disclaimer
+-------------
+This skeleton is similar to parts of the code of the WW-Intranet project.  Unfortunately I can't make the code completely available due to copyright protection. Nevertheless this should give you an impression of my coding skills and I hope to hear from you soon.
+
 Installation
 -------------
 - Copy all files into the *application* folder of your codeigniter installation.  
