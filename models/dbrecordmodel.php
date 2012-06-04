@@ -156,7 +156,7 @@ class dbRecordModel extends CI_Model {
 		// Build up the SQL query string
 		$sql = $this->db->insert_string($this->table, $data);
 		$query = $this->db->query($sql);
-		if (assert_sql_equals($this->table, $data, 1) == false) {
+       		if (assert_sql_equals($this->table, $data, 1,array($this->primaryKey)) == false) {
 			return false;
 		}
 		return $this->db->insert_id();
