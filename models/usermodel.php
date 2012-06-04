@@ -2,7 +2,7 @@
 /**
  * Handles the operations regarding a database record.
  */
-include 'dbrecordmodel.php';
+include_once 'dbrecordmodel.php';
 
 class userModel extends dbRecordModel {
 	function __construct() {
