@@ -62,7 +62,7 @@ function generate_detailview($name="",$write = false) {
 		$fields[] = '    <tr valign=\'top\'>
             <td align=\'left\'><b>'.  $value . ':</b></td>
             <td>
-               <input type=\'text\' name=\''.  $name . '['.  $value . ']\' value=\'<?= $'.  $name . '[\''.  $value . '\']; ?>\'"/>
+               <input type=\'text\' name=\''.  $name . '['.  $value . ']\' value=\'<?= $'.  $name . '[\''.  $value . '\']; ?>\'/>
             </td>
     </tr>';     	
     }
