@@ -78,7 +78,7 @@ class dbRecordModel extends CI_Model {
 		}
 
 		// Build up the SQL query string and run the query
-		$sql = 'SELECT ' . implode(',',$columns) . ' FROM ' . $this->table . ' ' . $where_clause . " " . $OrderBy . " " . $limit_clause;
+		$sql = "SELECT '" . implode("','",$columns) . "' FROM " . $this->table . ' ' . $where_clause . " " . $OrderBy . " " . $limit_clause;
 		$query = $this->db->query($sql);
 
 		if ($query->num_rows() > 0) {
@@ -129,7 +129,7 @@ class dbRecordModel extends CI_Model {
 		if ($columns == NULL) {
 			$columns = $this->columns;
 		}
-		$query = $this->db->query('SELECT ' . implode(',',$columns) . ' FROM ' . $this->table .  ' WHERE ' . $this->primaryKey . ' = "'.  $idField . '" LIMIT 1');
+		$query = $this->db->query("SELECT `" . implode("`,`",$columns) . '` FROM ' . $this->table .  ' WHERE ' . $this->primaryKey . ' = "'.  $idField . '" LIMIT 1');
 
 		if ($query->num_rows() > 0) {
 			$row = $query->row_array();
